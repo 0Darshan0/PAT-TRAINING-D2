@@ -1,0 +1,13 @@
+2.Reversed Strings
+CODE:
+public class Kata {
+
+  public static String solution(String str) {
+    if (str == null || str. isEmpty()){
+      return str;
+    }
+    return solution(str.substring(1))+str.charAt(0);
+    
+  }
+
+}
