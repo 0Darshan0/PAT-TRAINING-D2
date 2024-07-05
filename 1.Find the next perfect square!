@@ -1,0 +1,18 @@
+1.Find the next perfect square!
+CODE:
+public class NumberFun {
+  public static long findNextSquare(long sq) {
+          long sqrt = 1;
+          while (sqrt * sqrt < sq){
+              sqrt++;
+          }
+          if (sqrt * sqrt == sq){
+              long next_sqrt = sqrt + 1;
+              long next_square = next_sqrt * next_sqrt;
+              return next_square;
+            }
+          else{
+              return -1;
+            }
+  }
+}
